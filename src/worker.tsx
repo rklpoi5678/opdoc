@@ -13,5 +13,10 @@ export default defineApp([
     // setup ctx here
     ctx;
   },
-  render(Document, [route("/", Home)]),
+  render(Document, [
+    route("/", () => new Response("Hello world")),
+    route("/ping", function () {
+      return <h1>Pong!</h1>;
+    }),
+  ]),
 ]);
