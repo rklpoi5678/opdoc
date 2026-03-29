@@ -1,9 +1,9 @@
-import { render, route } from "rwsdk/router";
-import { defineApp } from "rwsdk/worker";
+import { render, route } from 'rwsdk/router';
+import { defineApp } from 'rwsdk/worker';
 
-import { Document } from "@/app/document";
-import { setCommonHeaders } from "@/app/headers";
-import { Home } from "@/app/pages/home";
+import { Document } from '@/app/document';
+import { setCommonHeaders } from '@/app/headers';
+import { Home } from '@/app/pages/home';
 
 export type AppContext = {};
 
@@ -14,9 +14,9 @@ export default defineApp([
     ctx;
   },
   render(Document, [
-    route("/", () => new Response("Hello world")),
-    route("/ping", function () {
-      return <h1>Pong!</h1>;
+    route('/', () => new Response('Hello world')),
+    route('/ping', function () {
+      return <h1 className="bg-blue-500">Pong!</h1>;
     }),
   ]),
 ]);
