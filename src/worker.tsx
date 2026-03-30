@@ -3,7 +3,9 @@ import { defineApp } from 'rwsdk/worker';
 
 import { Document } from '@/app/document';
 import { setCommonHeaders } from '@/app/headers';
-import { Home } from '@/app/pages/home';
+import NoteFlowHome from '@/app/pages/noteflow/Home';
+import NoteFlowDashboard from '@/app/pages/noteflow/Dashboard';
+import NoteFlowNotFound from '@/app/pages/noteflow/NotFound';
 
 export type AppContext = {};
 
@@ -14,9 +16,9 @@ export default defineApp([
     ctx;
   },
   render(Document, [
-    route('/', () => new Response('Hello world')),
-    route('/ping', function () {
-      return <h1 className="bg-blue-500">Pong!</h1>;
-    }),
+    route('/', () => <NoteFlowHome />),
+    route('/dashboard', () => <NoteFlowDashboard />),
+    route('/404', () => <NoteFlowNotFound />),
+    route('*', () => <NoteFlowNotFound />),
   ]),
 ]);
