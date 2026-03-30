@@ -328,7 +328,7 @@ export default function Dashboard() {
   const tx = {
     ko: {
       title: '대시보드',
-      subtitle: 'NoteFlow AI 데모',
+      subtitle: 'Opdoc데모',
       backToHome: '홈으로',
       fileTree: '파일 트리',
       editor: '에디터',
@@ -369,7 +369,7 @@ export default function Dashboard() {
     },
     en: {
       title: 'Dashboard',
-      subtitle: 'NoteFlow AI Demo',
+      subtitle: 'Opdoc Demo',
       backToHome: 'Back to Home',
       fileTree: 'File Tree',
       editor: 'Editor',
@@ -486,7 +486,7 @@ export default function Dashboard() {
             <Zap className="w-3 h-3 text-white" fill="white" />
           </div>
           <span className="font-bold text-sm" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>
-            <span className="gradient-text">NoteFlow</span>
+            <span className="gradient-text">Opdoc</span>
             <span className="text-white/60"> AI</span>
           </span>
         </div>
