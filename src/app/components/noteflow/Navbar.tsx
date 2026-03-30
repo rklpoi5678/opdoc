@@ -62,7 +62,7 @@ export default function Navbar({ lang, onLangToggle }: NavbarProps) {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <a href="/" className="flex items-center gap-2 group">
-            <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#7C3AED] to-[#06B6D4] flex items-center justify-center shadow-lg group-hover:shadow-purple-500/30 transition-shadow">
+            <div className="w-8 h-8 rounded-lg bg-linear-to-br from-[#7C3AED] to-[#06B6D4] flex items-center justify-center shadow-lg group-hover:shadow-purple-500/30 transition-shadow">
               <Zap className="w-4 h-4 text-white" fill="white" />
             </div>
             <span className="font-bold text-lg tracking-tight" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>
@@ -107,7 +107,7 @@ export default function Navbar({ lang, onLangToggle }: NavbarProps) {
             </button>
             <Button
               onClick={() => scrollTo("pricing")}
-              className="shimmer bg-gradient-to-r from-[#7C3AED] to-[#06B6D4] hover:opacity-90 text-white border-0 text-sm font-semibold px-5"
+              className="shimmer bg-linear-to-r from-[#7C3AED] to-[#06B6D4] hover:opacity-90 text-white border-0 text-sm font-semibold px-5"
               style={{ fontFamily: "'Space Grotesk', sans-serif" }}
             >
               {tx.cta}
@@ -137,7 +137,7 @@ export default function Navbar({ lang, onLangToggle }: NavbarProps) {
             </button>
             <Button
               onClick={() => scrollTo("pricing")}
-              className="bg-gradient-to-r from-[#7C3AED] to-[#06B6D4] text-white border-0 text-sm font-semibold"
+              className="bg-linear-to-r from-[#7C3AED] to-[#06B6D4] text-white border-0 text-sm font-semibold"
             >
               {tx.cta}
             </Button>
